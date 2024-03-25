@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waifu.Pics API</title>
+    <style>
+      html {
+        font-family: calibri;
+        font-size: 1.5rem;
+      }
+
+      .header {
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        width: 500px;
+      }
+      select {
+        font-size: 0.8rem;
+        background-color: hsl(0, 0%, 20%);
+        color: white;
+        border: none;
+      }
+
+      p {
+        font-size: 0.5rem;
+        margin: 0px 5px 10px 0px;
+      }
+
+      button {
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 10%;
+        background-color: hsl(0, 0%, 90%);
+      }
+      button:hover {
+        background-color: hsl(0, 0%, 80%);
+      }
+      button:active {
+        background-color: hsl(0, 0%, 70%);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="header">Siapa yang akan menjadi Waifumu</h2>
+    <label for="tipe">Pilih Tipe &nbsp&nbsp&nbsp&nbsp: </label>
+    <select id="tipe">
+      <option value="sfw">Sfw</option>
+      <option value="nsfw">Nsfw</option>
+    </select>
+    <br />
+    <label for="categori">Pilih Kategori : </label>
+    <select id="categori">
+      <option value="waifu">Waifu</option>
+      <option value="neko">Neko</option>
+      <option value="poke">Poke</option>
+      <option value="hug">Hug</option></select
+    ><br />
+    <p><b>Note</b> : Sfw bertati Safe for Work, dan Nsfw bearti Not Safe for Work</p>
+    <button type="submit" id="submit">Kirim</button>
+    <br /><br />
+    <div id="image" />
+    <script src="script2.js"></script>
+  </body>
+</html>
